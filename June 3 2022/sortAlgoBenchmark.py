@@ -15,14 +15,6 @@ def benchmark(func):
 
     return inner
 
-'''@benchmark
-def fibonacci(limit): 
-
-    while a < limit:
-
-        yield a
-        a, b  = b, a+b'''
-
 @benchmark
 def insertionSort(arr):
 
@@ -67,7 +59,7 @@ if __name__ == "__main__":
 
     try:
         arr = [54,76,87,45,342,23,12,34,6,7,87,5,4,3]
-        
+
         insertionSort(arr)
         bubbleSort(arr)
         selectionSort(arr)
@@ -75,16 +67,3 @@ if __name__ == "__main__":
 
     except:
         pass
-
-    '''try:
-        x = fibonacci(1000000000000000000000000)
-        fibList = []
-
-        for i in x:
-            fibList.append(i)
-        
-        for i in range(len(fibList)):
-            print(fibList[i])
-            
-    except StopIteration as e:
-        pass'''
