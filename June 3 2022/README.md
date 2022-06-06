@@ -19,27 +19,4 @@
 
 ***********************************************************************************************
 
-## Second Half
-
-- ⏸️ kunal sir's task.
-- 🔄 continue on amazonbook
-	- Try to configure swagger in project.
-	- sumit sir knowledge share on cloud computing.
-
-### Videos
-
-- N/A
-
-### Assignment 
-
-- 🔄 kunal sir's task 
-- 🔄 AmazonBook
-
-### Doubts
-
-- N/A
-
-### Links
-
-- N/A
 *********************************************************************************************

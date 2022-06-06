@@ -1,19 +1,7 @@
-import time
+from benchmarkModule import benchmark
+from customList import RandomNumbers
 import random
 
-def benchmark(func):
-
-    def inner(*args, **kwargs):
-
-        start = time.time()
-        value = func(*args, **kwargs)
-        end  = time.time()
-        runtime = end - start
-        print(f"The {func.__name__} took {runtime} seconds to complete the function")
-
-        return value
-
-    return inner
 
 @benchmark
 def insertionSort(arr):
@@ -57,13 +45,19 @@ def selectionSort(arr):
 
 if __name__ == "__main__":
 
-    try:
-        arr = [54,76,87,45,342,23,12,34,6,7,87,5,4,3]
 
-        insertionSort(arr)
-        bubbleSort(arr)
-        selectionSort(arr)
+    arr = [random.randrange(1, 50, 1) for i in range(30000)]
+    cList = RandomNumbers()
+    iterList = iter(cList)
+    
+    # for i in range(0,10):
+    #     arr.append(next(iterList))
+       # print(arr[i])
+
+    insertionSort(arr)
+    bubbleSort(arr)
+    selectionSort(arr)
 
 
-    except:
-        pass
+    numbers = list()
+
