@@ -46,18 +46,24 @@ def selectionSort(arr):
 if __name__ == "__main__":
 
 
-    arr = [random.randrange(1, 50, 1) for i in range(30000)]
+    arr = RandomNumbers()
+    print(type(arr))
+    #arr = [random.randrange(1, 50, 1) for i in range(30000)]
     cList = RandomNumbers()
-    iterList = iter(cList)
+    print(type(arr))
+    #iterList = iter(cList)
     
-    # for i in range(0,10):
-    #     arr.append(next(iterList))
-       # print(arr[i])
+    arr.insert(1)
+    arr.append(1)
+    print(arr[0])
+    print(arr[2])
+    for i in range(0,10):
+        arr.append(next(cList))
+        #print(arr[i])
 
     insertionSort(arr)
     bubbleSort(arr)
     selectionSort(arr)
 
 
-    numbers = list()
-
+    #numbers = list()
